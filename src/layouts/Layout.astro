@@ -2,6 +2,7 @@
 import { string } from "astro:schema";
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
+import { ClientRouter } from 'astro:transitions';
 
 // Server only
 interface Props  {
@@ -21,6 +22,8 @@ const { title, age } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ClientRouter />
+
 	</head>
 	<body>
 		<Navbar/>
