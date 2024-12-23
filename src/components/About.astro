@@ -1,5 +1,14 @@
 ---
-
+import CustomTitleComponent from "./CustomTitle.astro";
 ---
 
 <h1>About</h1>
+
+<CustomTitleComponent title="Custom Title" />
+
+<!-- <style is:global> -->
+<style>
+    h1 {
+        color: red;
+    }
+</style>
